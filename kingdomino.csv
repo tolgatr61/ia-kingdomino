@@ -1,0 +1,48 @@
+0,wheat,yellow,wheat,yellow,0,0,0wheat,0wheat
+1,wheat,yellow,wheat,yellow,0,0,0wheat,0wheat
+2,forest,dark green,forest,dark green,0,0,0forest,0forest
+3,forest,dark green,forest,dark green,0,0,0forest,0forest
+4,forest,dark green,forest,dark green,0,0,0forest,0forest
+5,forest,dark green,forest,dark green,0,0,0forest,0forest
+6,water,blue,water,blue,0,0,0water,0water
+7,water,blue,water,blue,0,0,0water,0water
+8,water,blue,water,blue,0,0,0water,0water
+9,grass,light green,grass,light green,0,0,0grass,0grass
+10,grass,light green,grass,light green,0,0,0grass,0grass
+11,swamp,brown,swamp,brown,0,0,0swamp,0swamp
+12,wheat,yellow,forest,dark green,0,0,0wheat,0forest
+13,wheat,yellow,water,blue,0,0,0wheat,0water
+14,wheat,yellow,grass,light green,0,0,0wheat,0grass
+15,wheat,yellow,swamp,brown,0,0,0wheat,0swamp
+16,forest,dark green,water,blue,0,0,0forest,0water
+17,forest,dark green,grass,light green,0,0,0forest,0grass
+18,wheat,yellow,forest,dark green,1,0,1wheat,0forest
+19,wheat,yellow,water,blue,1,0,1wheat,0water
+20,wheat,yellow,grass,light green,1,0,1wheat,0grass
+21,wheat,yellow,swamp,brown,1,0,1wheat,0swamp
+22,wheat,yellow,mine,black,1,0,1wheat,0mine
+23,forest,dark green,wheat,yellow,1,0,1forest,0wheat
+24,forest,dark green,wheat,yellow,1,0,1forest,0wheat
+25,forest,dark green,wheat,yellow,1,0,1forest,0wheat
+26,forest,dark green,wheat,yellow,1,0,1forest,0wheat
+27,forest,dark green,water,blue,1,0,1forest,0water
+28,forest,dark green,grass,light green,1,0,1forest,0grass
+29,water,blue,wheat,yellow,1,0,1water,0wheat
+30,water,blue,wheat,yellow,1,0,1water,0wheat
+31,water,blue,forest,dark green,1,0,1water,0forest
+32,water,blue,forest,dark green,1,0,1water,0forest
+33,water,blue,forest,dark green,1,0,1water,0forest
+34,water,blue,forest,dark green,1,0,1water,0forest
+35,wheat,yellow,grass,light green,0,1,0wheat,1grass
+36,water,blue,grass,light green,0,1,0water,1grass
+37,wheat,yellow,swamp,brown,0,1,0wheat,1swamp
+38,grass,light green,swamp,brown,0,1,0grass,1swamp
+39,mine,black,wheat,yellow,1,0,1mine,0wheat
+40,wheat,yellow,grass,light green,0,2,0wheat,2grass
+41,water,blue,grass,light green,0,2,0water,2grass
+42,wheat,yellow,swamp,brown,0,2,0wheat,2swamp
+43,grass,light green,swamp,brown,0,2,0grass,2swamp
+44,mine,black,wheat,yellow,2,0,2mine,0wheat
+45,swamp,brown,mine,black,0,2,0swamp,2mine
+46,swamp,brown,mine,black,0,2,0swamp,2mine
+47,wheat,yellow,mine,black,0,3,0wheat,3mine

@@ -1,0 +1,613 @@
+#3 ROBOTS, le premier à jouer a une strategie random, le second expectiminimax de profondeur 3 et le troisième random.
+Debut du jeu
+=========================================== TOUR 1 ===========================================
+
+0-------- TOUR du joueur : Robot 0 utilisant une strategie Random --------
+action choisi : [ castle ] 3 4
+|___||___||___||___||___|
+|___||___||___||___||___|
+|___||___||___||___||___|
+|___||___||___||___||cas|
+|___||___||___||___||___|
+Le score du joueur est :0
+temps exe : 0.023s
+
+
+1-------- TOUR du joueur : Robot 1 utilisant une strategie Random --------
+action choisi : [ castle ] 3 1
+|___||___||___||___||___|
+|___||___||___||___||___|
+|___||___||___||___||___|
+|___||cas||___||___||___|
+|___||___||___||___||___|
+Le score du joueur est :0
+temps exe : 0.0s
+
+
+2-------- TOUR du joueur : Robot 2 utilisant une strategie Expectiminimax depth: 3 --------
+action choisi : [ castle ] 0 0
+|cas||___||___||___||___|
+|___||___||___||___||___|
+|___||___||___||___||___|
+|___||___||___||___||___|
+|___||___||___||___||___|
+Le score du joueur est :0
+temps exe : 141.896s
+
+
+3-------- TOUR du joueur : Robot 3 utilisant une strategie Random --------
+action choisi : [ castle ] 1 1
+|___||___||___||___||___|
+|___||cas||___||___||___|
+|___||___||___||___||___|
+|___||___||___||___||___|
+|___||___||___||___||___|
+Le score du joueur est :0
+temps exe : 0.0s
+
+=========================================== TOUR 2 ===========================================
+Tirage de la pioches
+[[wheat 0|grass 1], [forest 0|grass 0], [mine 2|wheat 0], [wheat 1|forest 0]]
+
+0-------- TOUR du joueur : Robot 0 utilisant une strategie Random --------
+action choisi : [wheat 1|forest 0] horizontalReversed 2 4
+|___||___||___||___||___|
+|___||___||___||___||___|
+|___||___||___||0fo||1wh|
+|___||___||___||___||cas|
+|___||___||___||___||___|
+Le score du joueur est :1
+temps exe : 0.004s
+
+
+1-------- TOUR du joueur : Robot 1 utilisant une strategie Random --------
+action choisi : [forest 0|grass 0] verticalReversed 3 0
+|___||___||___||___||___|
+|___||___||___||___||___|
+|0gr||___||___||___||___|
+|0fo||cas||___||___||___|
+|___||___||___||___||___|
+Le score du joueur est :0
+temps exe : 0.003s
+
+
+2-------- TOUR du joueur : Robot 2 utilisant une strategie Expectiminimax depth: 3 --------
+action choisi : [wheat 0|grass 1] horizontal 0 2
+|cas||0wh||1gr||___||___|
+|___||___||___||___||___|
+|___||___||___||___||___|
+|___||___||___||___||___|
+|___||___||___||___||___|
+Le score du joueur est :1
+temps exe : 120.466s
+
+
+3-------- TOUR du joueur : Robot 3 utilisant une strategie Random --------
+action choisi : [mine 2|wheat 0] horizontal 2 2
+|___||___||___||___||___|
+|___||cas||___||___||___|
+|___||2mi||0wh||___||___|
+|___||___||___||___||___|
+|___||___||___||___||___|
+Le score du joueur est :2
+temps exe : 0.0s
+
+=========================================== TOUR 3 ===========================================
+Tirage de la pioches
+[[wheat 0|mine 3], [wheat 1|mine 0], [swamp 0|swamp 0], [swamp 0|mine 2]]
+
+0-------- TOUR du joueur : Robot 0 utilisant une strategie Random --------
+action choisi : [action skipped]
+|___||___||___||___||___|
+|___||___||___||___||___|
+|___||___||___||0fo||1wh|
+|___||___||___||___||cas|
+|___||___||___||___||___|
+Le score du joueur est :1
+temps exe : 0.0s
+
+
+1-------- TOUR du joueur : Robot 1 utilisant une strategie Random --------
+action choisi : [wheat 0|mine 3] verticalReversed 4 2
+|___||___||___||___||___|
+|___||___||___||___||___|
+|0gr||___||___||___||___|
+|0fo||cas||3mi||___||___|
+|___||___||0wh||___||___|
+Le score du joueur est :3
+temps exe : 0.003s
+
+
+2-------- TOUR du joueur : Robot 2 utilisant une strategie Expectiminimax depth: 3 --------
+action choisi : [wheat 1|mine 0] horizontal 1 1
+|cas||0wh||1gr||___||___|
+|1wh||0mi||___||___||___|
+|___||___||___||___||___|
+|___||___||___||___||___|
+|___||___||___||___||___|
+Le score du joueur est :2
+temps exe : 134.393s
+
+
+3-------- TOUR du joueur : Robot 3 utilisant une strategie Random --------
+action choisi : [swamp 0|mine 2] horizontalReversed 3 2
+|___||___||___||___||___|
+|___||cas||___||___||___|
+|___||2mi||0wh||___||___|
+|___||2mi||0sw||___||___|
+|___||___||___||___||___|
+Le score du joueur est :8
+temps exe : 0.0s
+
+=========================================== TOUR 4 ===========================================
+Tirage de la pioches
+[[water 0|water 0], [wheat 0|wheat 0], [wheat 1|swamp 0], [water 1|forest 0]]
+
+0-------- TOUR du joueur : Robot 0 utilisant une strategie Random --------
+action choisi : [water 1|forest 0] verticalReversed 3 2
+|___||___||___||___||___|
+|___||___||___||___||___|
+|___||___||0fo||0fo||1wh|
+|___||___||1wa||___||cas|
+|___||___||___||___||___|
+Le score du joueur est :2
+temps exe : 0.001s
+
+
+1-------- TOUR du joueur : Robot 1 utilisant une strategie Random --------
+action choisi : [wheat 1|swamp 0] horizontalReversed 4 1
+|___||___||___||___||___|
+|___||___||___||___||___|
+|0gr||___||___||___||___|
+|0fo||cas||3mi||___||___|
+|0sw||1wh||0wh||___||___|
+Le score du joueur est :5
+temps exe : 0.0s
+
+
+2-------- TOUR du joueur : Robot 2 utilisant une strategie Expectiminimax depth: 3 --------
+action choisi : [wheat 0|wheat 0] horizontal 2 1
+|cas||0wh||1gr||___||___|
+|1wh||0mi||___||___||___|
+|0wh||0wh||___||___||___|
+|___||___||___||___||___|
+|___||___||___||___||___|
+Le score du joueur est :4
+temps exe : 32.847s
+
+
+3-------- TOUR du joueur : Robot 3 utilisant une strategie Random --------
+action choisi : [action skipped]
+|___||___||___||___||___|
+|___||cas||___||___||___|
+|___||2mi||0wh||___||___|
+|___||2mi||0sw||___||___|
+|___||___||___||___||___|
+Le score du joueur est :8
+temps exe : 0.0s
+
+=========================================== TOUR 5 ===========================================
+Tirage de la pioches
+[[water 1|forest 0], [forest 1|wheat 0], [water 0|grass 2], [forest 0|forest 0]]
+
+0-------- TOUR du joueur : Robot 0 utilisant une strategie Random --------
+action choisi : [water 1|forest 0] verticalReversed 3 1
+|___||___||___||___||___|
+|___||___||___||___||___|
+|___||0fo||0fo||0fo||1wh|
+|___||1wa||1wa||___||cas|
+|___||___||___||___||___|
+Le score du joueur est :5
+temps exe : 0.001s
+
+
+1-------- TOUR du joueur : Robot 1 utilisant une strategie Random --------
+action choisi : [forest 0|forest 0] verticalReversed 2 1
+|___||___||___||___||___|
+|___||0fo||___||___||___|
+|0gr||0fo||___||___||___|
+|0fo||cas||3mi||___||___|
+|0sw||1wh||0wh||___||___|
+Le score du joueur est :5
+temps exe : 0.0s
+
+
+2-------- TOUR du joueur : Robot 2 utilisant une strategie Expectiminimax depth: 3 --------
+action choisi : [water 0|grass 2] horizontalReversed 0 4
+|cas||0wh||1gr||2gr||0wa|
+|1wh||0mi||___||___||___|
+|0wh||0wh||___||___||___|
+|___||___||___||___||___|
+|___||___||___||___||___|
+Le score du joueur est :9
+temps exe : 77.836s
+
+
+3-------- TOUR du joueur : Robot 3 utilisant une strategie Random --------
+action choisi : [forest 1|wheat 0] horizontalReversed 0 1
+|0wh||1fo||___||___||___|
+|___||cas||___||___||___|
+|___||2mi||0wh||___||___|
+|___||2mi||0sw||___||___|
+|___||___||___||___||___|
+Le score du joueur est :9
+temps exe : 0.0s
+
+=========================================== TOUR 6 ===========================================
+Tirage de la pioches
+[[forest 1|grass 0], [grass 0|grass 0], [wheat 0|grass 2], [forest 0|forest 0]]
+
+0-------- TOUR du joueur : Robot 0 utilisant une strategie Random --------
+action choisi : [wheat 0|grass 2] verticalReversed 4 3
+|___||___||___||___||___|
+|___||___||___||___||___|
+|___||0fo||0fo||0fo||1wh|
+|___||1wa||1wa||2gr||cas|
+|___||___||___||0wh||___|
+Le score du joueur est :7
+temps exe : 0.001s
+
+
+1-------- TOUR du joueur : Robot 1 utilisant une strategie Random --------
+action choisi : [forest 0|forest 0] horizontal 1 3
+|___||___||___||___||___|
+|___||0fo||0fo||0fo||___|
+|0gr||0fo||___||___||___|
+|0fo||cas||3mi||___||___|
+|0sw||1wh||0wh||___||___|
+Le score du joueur est :5
+temps exe : 0.001s
+
+
+2-------- TOUR du joueur : Robot 2 utilisant une strategie Expectiminimax depth: 3 --------
+action choisi : [forest 1|grass 0] horizontal 1 3
+|cas||0wh||1gr||2gr||0wa|
+|1wh||0mi||1fo||0gr||___|
+|0wh||0wh||___||___||___|
+|___||___||___||___||___|
+|___||___||___||___||___|
+Le score du joueur est :13
+temps exe : 29.755s
+
+
+3-------- TOUR du joueur : Robot 3 utilisant une strategie Random --------
+action choisi : [grass 0|grass 0] verticalReversed 2 0
+|0wh||1fo||___||___||___|
+|0gr||cas||___||___||___|
+|0gr||2mi||0wh||___||___|
+|___||2mi||0sw||___||___|
+|___||___||___||___||___|
+Le score du joueur est :9
+temps exe : 0.0s
+
+=========================================== TOUR 7 ===========================================
+Tirage de la pioches
+[[forest 0|forest 0], [water 0|grass 1], [water 1|wheat 0], [grass 0|grass 0]]
+
+0-------- TOUR du joueur : Robot 0 utilisant une strategie Random --------
+action choisi : [water 1|wheat 0] horizontalReversed 4 1
+|___||___||___||___||___|
+|___||___||___||___||___|
+|___||0fo||0fo||0fo||1wh|
+|___||1wa||1wa||2gr||cas|
+|0wh||1wa||___||0wh||___|
+Le score du joueur est :12
+temps exe : 0.0s
+
+
+1-------- TOUR du joueur : Robot 1 utilisant une strategie Random --------
+action choisi : [forest 0|forest 0] horizontal 2 3
+|___||___||___||___||___|
+|___||0fo||0fo||0fo||___|
+|0gr||0fo||0fo||0fo||___|
+|0fo||cas||3mi||___||___|
+|0sw||1wh||0wh||___||___|
+Le score du joueur est :5
+temps exe : 0.0s
+
+
+2-------- TOUR du joueur : Robot 2 utilisant une strategie Expectiminimax depth: 3 --------
+action choisi : [water 0|grass 1] horizontal 2 3
+|cas||0wh||1gr||2gr||0wa|
+|1wh||0mi||1fo||0gr||___|
+|0wh||0wh||0wa||1gr||___|
+|___||___||___||___||___|
+|___||___||___||___||___|
+Le score du joueur est :20
+temps exe : 21.106s
+
+
+3-------- TOUR du joueur : Robot 3 utilisant une strategie Random --------
+action choisi : [grass 0|grass 0] horizontal 1 3
+|0wh||1fo||___||___||___|
+|0gr||cas||0gr||0gr||___|
+|0gr||2mi||0wh||___||___|
+|___||2mi||0sw||___||___|
+|___||___||___||___||___|
+Le score du joueur est :9
+temps exe : 0.0s
+
+=========================================== TOUR 8 ===========================================
+Tirage de la pioches
+[[forest 1|wheat 0], [forest 0|forest 0], [water 0|water 0], [grass 0|swamp 1]]
+
+0-------- TOUR du joueur : Robot 0 utilisant une strategie Random --------
+action choisi : [action skipped]
+|___||___||___||___||___|
+|___||___||___||___||___|
+|___||0fo||0fo||0fo||1wh|
+|___||1wa||1wa||2gr||cas|
+|0wh||1wa||___||0wh||___|
+Le score du joueur est :12
+temps exe : 0.0s
+
+
+1-------- TOUR du joueur : Robot 1 utilisant une strategie Random --------
+action choisi : [forest 1|wheat 0] vertical 2 4
+|___||___||___||___||___|
+|___||0fo||0fo||0fo||1fo|
+|0gr||0fo||0fo||0fo||0wh|
+|0fo||cas||3mi||___||___|
+|0sw||1wh||0wh||___||___|
+Le score du joueur est :12
+temps exe : 0.004s
+
+
+2-------- TOUR du joueur : Robot 2 utilisant une strategie Expectiminimax depth: 3 --------
+action choisi : [water 0|water 0] vertical 2 4
+|cas||0wh||1gr||2gr||0wa|
+|1wh||0mi||1fo||0gr||0wa|
+|0wh||0wh||0wa||1gr||0wa|
+|___||___||___||___||___|
+|___||___||___||___||___|
+Le score du joueur est :20
+temps exe : 27.222s
+
+
+3-------- TOUR du joueur : Robot 3 utilisant une strategie Random --------
+action choisi : [grass 0|swamp 1] horizontalReversed 4 3
+|0wh||1fo||___||___||___|
+|0gr||cas||0gr||0gr||___|
+|0gr||2mi||0wh||___||___|
+|___||2mi||0sw||___||___|
+|___||___||1sw||0gr||___|
+Le score du joueur est :11
+temps exe : 0.001s
+
+=========================================== TOUR 9 ===========================================
+Tirage de la pioches
+[[wheat 0|swamp 1], [forest 1|wheat 0], [water 1|wheat 0], [wheat 0|swamp 0]]
+
+0-------- TOUR du joueur : Robot 0 utilisant une strategie Random --------
+action choisi : [forest 1|wheat 0] horizontalReversed 1 3
+|___||___||___||___||___|
+|___||___||0wh||1fo||___|
+|___||0fo||0fo||0fo||1wh|
+|___||1wa||1wa||2gr||cas|
+|0wh||1wa||___||0wh||___|
+Le score du joueur est :16
+temps exe : 0.0s
+
+
+1-------- TOUR du joueur : Robot 1 utilisant une strategie Random --------
+action choisi : [wheat 0|swamp 0] horizontalReversed 3 4
+|___||___||___||___||___|
+|___||0fo||0fo||0fo||1fo|
+|0gr||0fo||0fo||0fo||0wh|
+|0fo||cas||3mi||0sw||0wh|
+|0sw||1wh||0wh||___||___|
+Le score du joueur est :12
+temps exe : 0.0s
+
+
+2-------- TOUR du joueur : Robot 2 utilisant une strategie Expectiminimax depth: 3 --------
+action choisi : [wheat 0|swamp 1] horizontal 3 1
+|cas||0wh||1gr||2gr||0wa|
+|1wh||0mi||1fo||0gr||0wa|
+|0wh||0wh||0wa||1gr||0wa|
+|0wh||1sw||___||___||___|
+|___||___||___||___||___|
+Le score du joueur est :22
+temps exe : 12.713s
+
+
+3-------- TOUR du joueur : Robot 3 utilisant une strategie Random --------
+action choisi : [water 1|wheat 0] horizontalReversed 2 4
+|0wh||1fo||___||___||___|
+|0gr||cas||0gr||0gr||___|
+|0gr||2mi||0wh||0wh||1wa|
+|___||2mi||0sw||___||___|
+|___||___||1sw||0gr||___|
+Le score du joueur est :12
+temps exe : 0.0s
+
+=========================================== TOUR 10 ===========================================
+Tirage de la pioches
+[[forest 0|water 0], [mine 1|wheat 0], [water 1|forest 0], [forest 1|wheat 0]]
+
+0-------- TOUR du joueur : Robot 0 utilisant une strategie Random --------
+action choisi : [mine 1|wheat 0] vertical 1 1
+|___||1mi||___||___||___|
+|___||0wh||0wh||1fo||___|
+|___||0fo||0fo||0fo||1wh|
+|___||1wa||1wa||2gr||cas|
+|0wh||1wa||___||0wh||___|
+Le score du joueur est :17
+temps exe : 0.001s
+
+
+1-------- TOUR du joueur : Robot 1 utilisant une strategie Random --------
+action choisi : [forest 1|wheat 0] horizontalReversed 0 1
+|0wh||1fo||___||___||___|
+|___||0fo||0fo||0fo||1fo|
+|0gr||0fo||0fo||0fo||0wh|
+|0fo||cas||3mi||0sw||0wh|
+|0sw||1wh||0wh||___||___|
+Le score du joueur est :21
+temps exe : 0.0s
+
+
+2-------- TOUR du joueur : Robot 2 utilisant une strategie Expectiminimax depth: 3 --------
+action choisi : [forest 0|water 0] horizontalReversed 3 3
+|cas||0wh||1gr||2gr||0wa|
+|1wh||0mi||1fo||0gr||0wa|
+|0wh||0wh||0wa||1gr||0wa|
+|0wh||1sw||0wa||0fo||___|
+|___||___||___||___||___|
+Le score du joueur est :22
+temps exe : 7.83s
+
+
+3-------- TOUR du joueur : Robot 3 utilisant une strategie Random --------
+action choisi : [water 1|forest 0] horizontalReversed 3 4
+|0wh||1fo||___||___||___|
+|0gr||cas||0gr||0gr||___|
+|0gr||2mi||0wh||0wh||1wa|
+|___||2mi||0sw||0fo||1wa|
+|___||___||1sw||0gr||___|
+Le score du joueur est :15
+temps exe : 0.0s
+
+=========================================== TOUR 11 ===========================================
+Tirage de la pioches
+[[water 0|water 0], [wheat 0|wheat 0], [grass 0|swamp 2], [forest 1|water 0]]
+
+0-------- TOUR du joueur : Robot 0 utilisant une strategie Random --------
+action choisi : [forest 1|water 0] vertical 3 0
+|___||1mi||___||___||___|
+|___||0wh||0wh||1fo||___|
+|1fo||0fo||0fo||0fo||1wh|
+|0wa||1wa||1wa||2gr||cas|
+|0wh||1wa||___||0wh||___|
+Le score du joueur est :26
+temps exe : 0.0s
+
+
+1-------- TOUR du joueur : Robot 1 utilisant une strategie Random --------
+action choisi : [wheat 0|wheat 0] horizontalReversed 4 4
+|0wh||1fo||___||___||___|
+|___||0fo||0fo||0fo||1fo|
+|0gr||0fo||0fo||0fo||0wh|
+|0fo||cas||3mi||0sw||0wh|
+|0sw||1wh||0wh||0wh||0wh|
+Le score du joueur est :25
+temps exe : 0.0s
+
+
+2-------- TOUR du joueur : Robot 2 utilisant une strategie Expectiminimax depth: 3 --------
+action choisi : [grass 0|swamp 2] horizontal 4 1
+|cas||0wh||1gr||2gr||0wa|
+|1wh||0mi||1fo||0gr||0wa|
+|0wh||0wh||0wa||1gr||0wa|
+|0wh||1sw||0wa||0fo||___|
+|0gr||2sw||___||___||___|
+Le score du joueur est :27
+temps exe : 5.658s
+
+
+3-------- TOUR du joueur : Robot 3 utilisant une strategie Random --------
+action choisi : [water 0|water 0] verticalReversed 1 4
+|0wh||1fo||___||___||0wa|
+|0gr||cas||0gr||0gr||0wa|
+|0gr||2mi||0wh||0wh||1wa|
+|___||2mi||0sw||0fo||1wa|
+|___||___||1sw||0gr||___|
+Le score du joueur est :19
+temps exe : 0.0s
+
+=========================================== TOUR 12 ===========================================
+Tirage de la pioches
+[[wheat 0|water 0], [wheat 1|grass 0], [wheat 1|water 0], [swamp 0|mine 2]]
+
+0-------- TOUR du joueur : Robot 0 utilisant une strategie Random --------
+action choisi : [wheat 0|water 0] horizontal 0 3
+|___||1mi||0wh||0wa||___|
+|___||0wh||0wh||1fo||___|
+|1fo||0fo||0fo||0fo||1wh|
+|0wa||1wa||1wa||2gr||cas|
+|0wh||1wa||___||0wh||___|
+Le score du joueur est :26
+temps exe : 0.0s
+
+
+1-------- TOUR du joueur : Robot 1 utilisant une strategie Random --------
+action choisi : [action skipped]
+|0wh||1fo||___||___||___|
+|___||0fo||0fo||0fo||1fo|
+|0gr||0fo||0fo||0fo||0wh|
+|0fo||cas||3mi||0sw||0wh|
+|0sw||1wh||0wh||0wh||0wh|
+Le score du joueur est :25
+temps exe : 0.0s
+
+
+2-------- TOUR du joueur : Robot 2 utilisant une strategie Expectiminimax depth: 3 --------
+action choisi : [wheat 1|water 0] horizontalReversed 4 3
+|cas||0wh||1gr||2gr||0wa|
+|1wh||0mi||1fo||0gr||0wa|
+|0wh||0wh||0wa||1gr||0wa|
+|0wh||1sw||0wa||0fo||___|
+|0gr||2sw||0wa||1wh||___|
+Le score du joueur est :28
+temps exe : 0.425s
+
+
+3-------- TOUR du joueur : Robot 3 utilisant une strategie Random --------
+action choisi : [wheat 1|grass 0] horizontalReversed 0 3
+|0wh||1fo||0gr||1wh||0wa|
+|0gr||cas||0gr||0gr||0wa|
+|0gr||2mi||0wh||0wh||1wa|
+|___||2mi||0sw||0fo||1wa|
+|___||___||1sw||0gr||___|
+Le score du joueur est :20
+temps exe : 0.0s
+
+=========================================== TOUR 13 ===========================================
+Tirage de la pioches
+[]
+
+0-------- TOUR du joueur : Robot 0 utilisant une strategie Random --------
+action choisi : [action skipped]
+|___||1mi||0wh||0wa||___|
+|___||0wh||0wh||1fo||___|
+|1fo||0fo||0fo||0fo||1wh|
+|0wa||1wa||1wa||2gr||cas|
+|0wh||1wa||___||0wh||___|
+Le score du joueur est :26
+temps exe : 0.0s
+
+
+1-------- TOUR du joueur : Robot 1 utilisant une strategie Random --------
+action choisi : [action skipped]
+|0wh||1fo||___||___||___|
+|___||0fo||0fo||0fo||1fo|
+|0gr||0fo||0fo||0fo||0wh|
+|0fo||cas||3mi||0sw||0wh|
+|0sw||1wh||0wh||0wh||0wh|
+Le score du joueur est :25
+temps exe : 0.0s
+
+
+2-------- TOUR du joueur : Robot 2 utilisant une strategie Expectiminimax depth: 3 --------
+action choisi : [action skipped]
+|cas||0wh||1gr||2gr||0wa|
+|1wh||0mi||1fo||0gr||0wa|
+|0wh||0wh||0wa||1gr||0wa|
+|0wh||1sw||0wa||0fo||___|
+|0gr||2sw||0wa||1wh||___|
+Le score du joueur est :28
+temps exe : 0.017s
+
+
+3-------- TOUR du joueur : Robot 3 utilisant une strategie Random --------
+action choisi : [action skipped]
+|0wh||1fo||0gr||1wh||0wa|
+|0gr||cas||0gr||0gr||0wa|
+|0gr||2mi||0wh||0wh||1wa|
+|___||2mi||0sw||0fo||1wa|
+|___||___||1sw||0gr||___|
+Le score du joueur est :20
+temps exe : 0.0s
+
+
+Process finished with exit code 0

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="solver-kingdomino" default="main" basedir=".">
+    <!-- Sets variables which can later be used. -->
+    <!-- The value of a property is accessed via ${} -->
+    <property name="src.dir" location="src" />
+    <property name="build.dir" location="build/classes" />
+    <property name="libs.dir" location="lib" />
+    <property name="dist.dir" location="dist/jar" />
+    <property name="docs.dir" location="doc" />
+    <path id="build-classpath">
+        <fileset dir="${libs.dir}">
+            <include name="*.jar" />
+        </fileset>
+    </path>
+    <!-- Deletes the existing build, docs and dist directory-->
+    <target name="clean">
+        <delete dir="${build.dir}" />
+        <delete dir="${dist.dir}" />
+    </target>
+    <!-- Creates the  build, docs and dist directory-->
+    <target name="makedir">
+        <mkdir dir="${build.dir}" />
+        <mkdir dir="${docs.dir}" />
+        <mkdir dir="${dist.dir}" />
+    </target>
+    <!-- Compiles the java code (including the usage of library for JUnit -->
+    <target name="compile" depends="clean, makedir">
+        <javac srcdir="${src.dir}" destdir="${build.dir}">
+            <classpath refid="build-classpath" />
+        </javac>
+    </target>
+    <!-- Creates Javadoc -->
+    <target name="docs" depends="compile">
+        <javadoc packagenames="src" sourcepath="${src.dir}" destdir="${docs.dir}">
+            <!-- Define which files / directory should get included, we include all -->
+            <classpath refid="build-classpath" />
+            <fileset dir="${src.dir}">
+                <include name="**" />
+            </fileset>
+        </javadoc>
+    </target>
+    <!--Creates the deployable jar file  -->
+    <target name="jar" depends="compile">
+        <jar destfile="${dist.dir}\main.jar" basedir="${build.dir}">
+            <zipgroupfileset dir="${libs.dir}" includes="**/*.jar" />
+            <manifest>
+                <attribute name="Main-Class" value="Main" />
+                <attribute name="Build-Path" value="${build-classpath}" />
+            </manifest>
+        </jar>
+    </target>
+    <target name="main" depends="compile, jar, docs">
+        <description>Main target</description>
+    </target>
+
+    <target name="run" depends="jar">
+        <java jar="dist/jar/main.jar" fork="true"/>
+    </target>
+
+</project>
